@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  node_docker_test:
+    image: node
+    container_name: projectnode
+    ports:
+      - 5000:3000
+    build: .
+    command: node server.js
+
+  #db:
